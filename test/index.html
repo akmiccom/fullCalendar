@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Full Calendarのjs-->
+    <!-- <script src='../dist/index.global.min.js'></script> -->
+    <!-- Full CalendarとGoogleカレンダーのjs-->
+    <!-- <script src='../test/index.global.min.js'></script> -->
+    <!-- FullCalendarライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js"></script>
+
+    <!-- FullCalendarのGoogleカレンダー用ライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.6/index.global.min.js"></script>
+
+</head>
+
+<body>
+    <div id='calendar'></div>
+
+    <script>
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        locale: 'ja',//日本語表記
+        buttonText: {//各ボタンなどの日本語表記
+          prev: '<',
+          next: '>',
+          prevYear: '<<',
+          nextYear: '>>',
+          today: '今日',
+          month: '月',
+          week: '週',
+          day: '日',
+          list: '一覧'
+        },
+  
+        headerToolbar: {//各ボタンなどの配置
+          left: 'dayGridMonth,listYear',
+          center: 'title',
+          right: 'prev,next today'
+        },
+  
+  
+        displayEventTime: false,//開始時間を表示するかどうか
+  
+        //Googleカレンダー連携
+        googleCalendarApiKey: 'AIzaSyCpxgo436kPeLR8BcPMO_jfu1pmju3KXdg',//Google APIキー
+        events: 'mkyaguchi@gmail.com' //GoogleカレンダーのID
+      });
+      calendar.render();  
+    </script>
+</body>
+
+</html>

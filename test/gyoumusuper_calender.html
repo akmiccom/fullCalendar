@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年間カレンダー</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/main.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/locales-all.min.js"></script> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <style>
+        .yearly-calendar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .calendar-container {
+            width: 32%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>2026年 年間カレンダー</h1>
+<div class="yearly-calendar">
+    <!-- 12ヶ月分のカレンダーを表示 -->
+    <div class="calendar-container"><div id="calendar-1"></div></div>
+    <div class="calendar-container"><div id="calendar-2"></div></div>
+    <div class="calendar-container"><div id="calendar-3"></div></div>
+    <div class="calendar-container"><div id="calendar-4"></div></div>
+    <div class="calendar-container"><div id="calendar-5"></div></div>
+    <div class="calendar-container"><div id="calendar-6"></div></div>
+    <div class="calendar-container"><div id="calendar-7"></div></div>
+    <div class="calendar-container"><div id="calendar-8"></div></div>
+    <div class="calendar-container"><div id="calendar-9"></div></div>
+    <div class="calendar-container"><div id="calendar-10"></div></div>
+    <div class="calendar-container"><div id="calendar-11"></div></div>
+    <div class="calendar-container"><div id="calendar-12"></div></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        for (let i = 1; i <= 12; i++) {
+            let calendarEl = document.getElementById('calendar-' + i);
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                initialDate: `2026-${String(i).padStart(2, '0')}-01`,
+                locale: 'ja',
+                headerToolbar: false, // ヘッダー非表示
+                height: 'auto',
+            });
+            calendar.render();
+        }
+    });
+</script>
+
+</body>
+</html>

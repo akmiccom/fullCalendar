@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: 70px repeat(31, 1fr); /* 1列目をヘッダー用に設定し、残りを日付用に設定 */
+    gap: 1px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.day, .month-header {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 70px;
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+}
+
+.date {
+    font-size: 1.2em;
+}
+
+.day-of-week {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.day.saturday .day-of-week,
+.date.saturday {
+    color: blue; /* 土曜日を青文字に */
+}
+
+.day.sunday .day-of-week,
+.date.sunday {
+    color: red; /* 日曜日を赤文字に */
+}
+
+.header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+.month-header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1; /* 月のヘッダーが1列目に配置されるように設定 */
+}
+
+.event {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #333;
+}

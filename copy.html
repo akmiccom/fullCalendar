@@ -1,0 +1,857 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- fullcalendar.js -->
+    <style data-fullcalendar=""></style>
+    <!-- <script src="../fullcalendar-6.1.15/dist/index.global.js"></script> -->
+
+    <!-- For Google Calendar -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.6/index.global.min.js"></script> -->
+
+    <!-- bootstrap -->
+    <!-- <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'> -->
+    <!-- <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'> -->
+
+    <!-- Local js -->
+    <!-- <script src="daygrid-views.js"></script> -->
+
+    <!-- Local css -->
+    <!-- <style src="daygrid-views.css"></style> -->
+  </head>
+  <body>
+    <div
+      id="calendar"
+      class="fc fc-media-screen fc-direction-ltr fc-theme-standard"
+      style="height: 1000px"
+    >
+      <div class="fc-header-toolbar fc-toolbar fc-toolbar-ltr">
+        <div class="fc-toolbar-chunk">
+          <div class="fc-button-group">
+            <button
+              type="button"
+              title="Previous Y"
+              aria-pressed="false"
+              class="fc-prevYear-button fc-button fc-button-primary"
+            >
+              PY</button
+            ><button
+              type="button"
+              title="Previous M"
+              aria-pressed="false"
+              class="fc-prev-button fc-button fc-button-primary"
+            >
+              <span
+                class="fc-icon fc-icon-chevron-left"
+                role="img"
+              ></span></button
+            ><button
+              type="button"
+              title="Next M"
+              aria-pressed="false"
+              class="fc-next-button fc-button fc-button-primary"
+            >
+              <span
+                class="fc-icon fc-icon-chevron-right"
+                role="img"
+              ></span></button
+            ><button
+              type="button"
+              title="Next Y"
+              aria-pressed="false"
+              class="fc-nextYear-button fc-button fc-button-primary"
+            >
+              NY
+            </button>
+          </div>
+          <button
+            type="button"
+            title="This M"
+            aria-pressed="false"
+            class="fc-today-button fc-button fc-button-primary"
+          >
+            TODAY
+          </button>
+        </div>
+        <div class="fc-toolbar-chunk">
+          <h2 class="fc-toolbar-title" id="fc-dom-1">April 2025</h2>
+        </div>
+        <div class="fc-toolbar-chunk">
+          <div class="fc-button-group">
+            <button
+              type="button"
+              title="W4 view"
+              aria-pressed="false"
+              class="fc-dayGridWeek4-button fc-button fc-button-primary"
+            >
+              W4</button
+            ><button
+              type="button"
+              title="L3 view"
+              aria-pressed="false"
+              class="fc-listMonth3-button fc-button fc-button-primary"
+            >
+              L3</button
+            ><button
+              type="button"
+              title="Y view"
+              aria-pressed="false"
+              class="fc-multiWeek18-button fc-button fc-button-primary"
+            >
+              Y</button
+            ><button
+              type="button"
+              title="M view"
+              aria-pressed="false"
+              class="fc-dayGridMonth-button fc-button fc-button-primary"
+            >
+              M</button
+            ><button
+              type="button"
+              title="W view"
+              aria-pressed="false"
+              class="fc-dayGridWeek-button fc-button fc-button-primary"
+            >
+              W</button
+            ><button
+              type="button"
+              title="D view"
+              aria-pressed="false"
+              class="fc-dayGridDay-button fc-button fc-button-primary"
+            >
+              D</button
+            ><button
+              type="button"
+              title="LY view"
+              aria-pressed="false"
+              class="fc-listYear-button fc-button fc-button-primary"
+            >
+              LY</button
+            ><button
+              type="button"
+              title="LM view"
+              aria-pressed="true"
+              class="fc-listMonth-button fc-button fc-button-primary fc-button-active"
+            >
+              LM
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-labelledby="fc-dom-1"
+        class="fc-view-harness fc-view-harness-active"
+      >
+        <div class="fc-listMonth-view fc-view fc-list fc-list-sticky">
+          <div
+            class="fc-scroller fc-scroller-liquid"
+            style="overflow: hidden auto"
+          >
+            <table class="fc-list-table">
+              <thead>
+                <tr>
+                  <th scope="col" id="fc-dom-145">Time</th>
+                  <th scope="col" aria-hidden="true"></th>
+                  <th scope="col" id="fc-dom-146">Event</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  data-date="2025-04-24"
+                  class="fc-list-day fc-day fc-day-thu fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-24"
+                    aria-labelledby="fc-dom-167"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-167"
+                        class="fc-list-day-text"
+                        title="Go to April 24, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 24, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 24, 2025"
+                        data-navlink=""
+                        >Thursday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">9:30am - 3:30pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-24"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NWZqZm5ja3BiOHQ1cHZzMTlrMzY5MTVocjcgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Flight to SGN (VN 307)</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">5:00pm - 6:00pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-24"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=Mzg1dWFvMG5vYXVwamFzazZsOTltNjkwYXQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >湘南美容外科</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">7:30pm - 8:30pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-24"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGszbjVrN2ZxbnFxMWV2aWNyZzlvM3A3cnEgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Barbershop</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-25"
+                  class="fc-list-day fc-day fc-day-fri fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-25"
+                    aria-labelledby="fc-dom-168"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-168"
+                        class="fc-list-day-text"
+                        title="Go to April 25, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 25, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 25, 2025"
+                        data-navlink=""
+                        >Friday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-25"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-25"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-26"
+                  class="fc-list-day fc-day fc-day-sat fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-26"
+                    aria-labelledby="fc-dom-169"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-169"
+                        class="fc-list-day-text"
+                        title="Go to April 26, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 26, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 26, 2025"
+                        data-navlink=""
+                        >Saturday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-26"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-26"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-26"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-26"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MjFnbjhqbTc4NmtpYmN0dmZyY20wNmJidHUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >GW Holidays</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">12:20pm - 3:30pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-26"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NTNjb2UwMWdqMGFjMG8zYjI0bzhkaWV1Y3UgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >(SGN-SIN) SQ177 →</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-27"
+                  class="fc-list-day fc-day fc-day-sun fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-27"
+                    aria-labelledby="fc-dom-170"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-170"
+                        class="fc-list-day-text"
+                        title="Go to April 27, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 27, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 27, 2025"
+                        data-navlink=""
+                        >Sunday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-27"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-27"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-27"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-27"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MjFnbjhqbTc4NmtpYmN0dmZyY20wNmJidHUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >GW Holidays</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-27"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-27"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=Nm9nZnFtNmNpdHR2a2M3a25rMmQ3bmFpZzMgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >QQEnglish Stay</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">11:00am - 2:45pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-27"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGJncGsyNWVnamV0b3ZpdnBnaGxtYW81dmogdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >(SIN-CEB) SQ900 →</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-28"
+                  class="fc-list-day fc-day fc-day-mon fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-28"
+                    aria-labelledby="fc-dom-171"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-171"
+                        class="fc-list-day-text"
+                        title="Go to April 28, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 28, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 28, 2025"
+                        data-navlink=""
+                        >Monday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-28"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-28"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-28"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-28"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MjFnbjhqbTc4NmtpYmN0dmZyY20wNmJidHUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >GW Holidays</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-28"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-28"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=Nm9nZnFtNmNpdHR2a2M3a25rMmQ3bmFpZzMgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >QQEnglish Stay</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">6:00am - 6:00pm</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-28"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MGhmcTk0Y3QwYWYwOTFtYzh1MG9iMnVnNnQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >メコン川 ツアー</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-29"
+                  class="fc-list-day fc-day fc-day-tue fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-29"
+                    aria-labelledby="fc-dom-172"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-172"
+                        class="fc-list-day-text"
+                        title="Go to April 29, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 29, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 29, 2025"
+                        data-navlink=""
+                        >Tuesday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-29"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-29"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-29"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-29"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MjFnbjhqbTc4NmtpYmN0dmZyY20wNmJidHUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >GW Holidays</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-29"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-29"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=Nm9nZnFtNmNpdHR2a2M3a25rMmQ3bmFpZzMgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >QQEnglish Stay</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-start fc-event-end fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td class="fc-list-event-time">10:00am - 10:30am</td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-29"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MDZrNTBuN3V2NDlvdnZkcXNlMzBsMnJ2bmUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >バイクツアー</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  data-date="2025-04-30"
+                  class="fc-list-day fc-day fc-day-wed fc-day-future"
+                >
+                  <th
+                    scope="colgroup"
+                    colspan="3"
+                    id="fc-dom-147-2025-04-30"
+                    aria-labelledby="fc-dom-173"
+                  >
+                    <div class="fc-list-day-cushion fc-cell-shaded">
+                      <a
+                        id="fc-dom-173"
+                        class="fc-list-day-text"
+                        title="Go to April 30, 2025"
+                        data-navlink=""
+                        tabindex="0"
+                        >April 30, 2025</a
+                      ><a
+                        aria-hidden="true"
+                        class="fc-list-day-side-text"
+                        title="Go to April 30, 2025"
+                        data-navlink=""
+                        >Wednesday</a
+                      >
+                    </div>
+                  </th>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-30"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-30"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=NGMyNXUwNDZuZmF1MzJzcmlpZDdkMWxnMHQgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >Stay at Nguyen Hue ¥20,470</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-30"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-30"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=MjFnbjhqbTc4NmtpYmN0dmZyY20wNmJidHUgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >GW Holidays</a
+                    >
+                  </td>
+                </tr>
+                <tr
+                  class="fc-event fc-event-future fc-list-event fc-event-forced-url"
+                >
+                  <td
+                    headers="fc-dom-145 fc-dom-147-2025-04-30"
+                    class="fc-list-event-time"
+                  >
+                    all-day
+                  </td>
+                  <td aria-hidden="true" class="fc-list-event-graphic">
+                    <span class="fc-list-event-dot"></span>
+                  </td>
+                  <td
+                    headers="fc-dom-146 fc-dom-147-2025-04-30"
+                    class="fc-list-event-title"
+                  >
+                    <a
+                      href="https://www.google.com/calendar/event?eid=Nm9nZnFtNmNpdHR2a2M3a25rMmQ3bmFpZzMgdjU5dWsycjc3dnE2NWRicHVtY2ZucWFxNDBAZw&amp;ctz=Asia/Tokyo&amp;ctz=Asia/Tokyo"
+                      >QQEnglish Stay</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="fc-footer-toolbar fc-toolbar fc-toolbar-ltr">
+        <div class="fc-toolbar-chunk"></div>
+        <div class="fc-toolbar-chunk">
+          <div class="fc-button-group">
+            <button
+              type="button"
+              title=""
+              aria-pressed="false"
+              class="fc-doubleLeft-button fc-button fc-button-primary"
+            >
+              <span
+                class="fc-icon fc-icon-chevrons-left"
+                role="img"
+              ></span></button
+            ><button
+              type="button"
+              title="Previous M"
+              aria-pressed="false"
+              class="fc-prev-button fc-button fc-button-primary"
+            >
+              <span
+                class="fc-icon fc-icon-chevron-left"
+                role="img"
+              ></span></button
+            ><button
+              type="button"
+              title="Next M"
+              aria-pressed="false"
+              class="fc-next-button fc-button fc-button-primary"
+            >
+              <span
+                class="fc-icon fc-icon-chevron-right"
+                role="img"
+              ></span></button
+            ><button
+              type="button"
+              title=""
+              aria-pressed="false"
+              class="fc-doubleRight-button fc-button fc-button-primary"
+            >
+              <span class="fc-icon fc-icon-chevrons-right" role="img"></span>
+            </button>
+          </div>
+        </div>
+        <div class="fc-toolbar-chunk"></div>
+      </div>
+    </div>
+  </body>
+</html>

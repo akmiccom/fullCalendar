@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Google Calendar API
-    const api_key = 'AIzaSyCpxgo436kPeLR8BcPMO_jfu1pmju3KXdg';
     const multiMInitialDate = new Date();
     multiMInitialDate.setMonth(multiMInitialDate.getMonth()-2);
 
